@@ -46,7 +46,7 @@ module.exports = function (req, res, next) {
             description: 'An app made with Webmaker',
             launch_path: '/index.html',
             icons: {
-                '128': app.icon
+                '128': json.icon
             },
             developer: {
                 name: username
