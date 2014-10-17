@@ -76,7 +76,7 @@ module.exports = function (req, res, next) {
         queue.push(function (callback) {
             s3Util.client.putObject({
                 Key: dir + 'manifest.webapp',
-                Body: manifestJSON,
+                Body: JSON.stringify(manifestJSON),
                 ContentType: 'application/json',
             }, callback);
         });
